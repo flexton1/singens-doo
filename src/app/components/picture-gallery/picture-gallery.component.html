@@ -1,0 +1,28 @@
+<div class="d-flex justify-content-center flex-wrap">
+  <button mat-raised-button class="btn btn-default btn-work" (click)="onClickBtn('Planika1')"
+    title="Plakari">Planika - Lukavac</button>
+  <button mat-raised-button class="btn btn-default btn-work" (click)="onClickBtn('Planika')"
+    title="Komode">Planika - Mostar</button>
+  <button mat-raised-button class="btn btn-default btn-work" (click)="onClickBtn('Bjelasnica')"
+    title="Komode">Bjelašnica apartmani</button>
+  <button mat-raised-button class="btn btn-default btn-work" (click)="onClickBtn('Salamander')"
+    title="Komode">Salamander (Bingo SCC)</button>
+  <button mat-raised-button class="btn btn-default btn-work" (click)="onClickBtn('Razno')"
+    title="Komode">Razno</button>
+</div>
+
+<div class="container-fluid">
+  <ul class="d-flex flex-wrap">
+
+    <li *ngFor="let elem of Items">
+      <div *ngIf="elem.type === description">
+        <a target="_blank" href="{{ elem.urls }}">
+          <img src="{{ elem.urls }}" class="img border" width="400px" height="400px">
+        </a>
+      </div>
+
+    </li>
+
+  </ul>
+
+</div>
