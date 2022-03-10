@@ -13,3 +13,10 @@ a:hover, a:active{
 mat-toolbar{
     border-radius: 3px;
 }
+
+#logo {
+    max-height: 40px;
+    max-width: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
