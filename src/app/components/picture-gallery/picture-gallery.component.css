@@ -20,5 +20,10 @@ li { display:inline;}
    
  }
 
+ .container-fluid {
+max-width: 95%;
+
+ }
+
 
  
